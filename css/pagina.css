@@ -1,0 +1,26 @@
+:root {
+    --cor-primaria: #2563eb;
+    --cor-secundaria: #1e293b;
+    --cor-texto: #ffffff;
+    --cor-fundo: #0f172a;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.imgfundo img{
+    width: 100%;
+    max-width: 1900px;
+    height: auto;
+}
+
+
+.imgfundo h1{
+    position: absolute;
+    color: #ffffff;
+    
+}
