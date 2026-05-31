@@ -1,0 +1,30 @@
+
+#sec-1, #sec-3, #sec-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4C4C59;
+    font-family: 'Roboto';
+    padding: 20px;
+    margin: 200px;
+    border-radius: 10px;
+}
+
+#sec-2, #sec-4, #sec-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #10206E;
+    font-family: 'Roboto';
+    padding: 90px;
+}
+
+#rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4C4C59;
+    font-family: 'Roboto';
+}
