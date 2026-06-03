@@ -1,18 +1,30 @@
+/* FONTES */
+@font-face{
+    font-family: Lato;
+    src: url(../Fontes/Lato-Regular.woff2);
+}
+@font-face{
+    font-family: Oswald;
+    src: url(../Fontes/Oswald-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../Fontes/Roboto-VariableFont_wdth\,wght.ttf);
+    font-weight: 300;
+}
 
-/* 
-paleta de cores;
-#10206E
-#020E02
-#CCC23E
-#FFFFDD
-#265C00
-#E63946 
-*/
-
+/* VARIÁVEIS E RESET CSS */
 :root {
     --spacing-sm: 10px;
     --spacing-md: 20px;
     --spacing-lg: 30px;
+    --color-almost-White: #FFFFFD;
+    --color-yellow: #CCC23E;
+    --color-navy-Blue: #10206E;
+    --color-forest-green: #265C00;
+    --color-dark-green: #020E02;
+    --color-dark-gray: #010102;
+    --color-red: #E63946;
 }
 
 *{
@@ -20,6 +32,8 @@ paleta de cores;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* HEADER DA PÁGINA */
 
 .logofiap{
     position: absolute;
@@ -29,7 +43,7 @@ paleta de cores;
 }
 
 .header-Sec {
-    background-image: url(../Imagens/satelite-fundo.png);
+    background-image: url(../Imagens/Satelite-inicio.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -64,7 +78,7 @@ h1 {
     font-family: 'Nunito', sans-serif;
     font-size: 2.8rem;
     font-weight: 700;
-    color: #e8e8e8;
+    color: var(--color-almost-White);
     letter-spacing: 8px;
     text-shadow:
     0px 0px 40px rgba(255, 255, 255, 0.6),
@@ -91,7 +105,7 @@ h1 {
 
 .item-menu{
     text-decoration: none;
-    color: #fffffD;
+    color: var(--color-almost-White);
     font-family: 'Raleway', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
@@ -99,7 +113,7 @@ h1 {
 }
 
 .item-menu:hover {
-    color: #CCC23E;  
+    color: var(--color-yellow);  
 }
 
 .sec-lista {
@@ -108,13 +122,71 @@ h1 {
     margin-left: var(--spacing-sm);
 }
 
+/* SEÇÃO 1 E DEFINIÇÃO DA SEÇÃO 3 E 5 (TALVEZ MUDE DEPOIS) */
+
 #sec-1, #sec-3, #sec-5{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFDD;
-    padding: 300px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+background-color: var(--color-dark-gray);
+color: var(--color-almost-White);
+padding: 160px;
+}
+
+.div-txt{
+width: 60%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: var(--spacing-lg);
+padding: var(--spacing-md);
+}
+
+.div-s1-img{
+display: flex;
+justify-content: center;
+align-items: center;
+background: var(--color-dark-gray);
+padding: var(--spacing-sm);
+border-radius: 0;
+width: 80%;
+max-width: 100%;
+min-height: 100px; 
+}
+
+.sec1-img{
+width: 100%;
+height: 100%;
+border-radius: 3%;
+display: block;
+box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.9);
+margin-left: 150px;
+}
+
+.h2-txt {
+font-weight: 400;
+font-size: 32px;
+color: var(--color-text-secondary);
+line-height: 1.6;
+text-align: left;
+font-family: 'Oswald', sans-serif;
+}
+
+.txt{
+font-family: 'Roboto', sans-serif;
+text-align: left;
+font-size: 16px;
+}
+
+/* SEÇÃO 2, 4, 6 (TALVEZ MUDE DEPOIS) E RODAPÉ */
+
+h2{
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
 }
 
 #sec-2, #sec-4, #sec-6{
@@ -122,24 +194,17 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #10206E;
-    color: aliceblue;
+    background-color: var(--color-navy-Blue);
+    color: var(--color-almost-White);
     padding: 300px;
 }
 
-#rodape {
+#rodape{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1a1a24;
-    color: #aaaaaa;
+    background-color: var(--color-dark-gray);
+    color: var(--color-almost-White);
     font-family: 'Raleway', sans-serif;
     padding: 20px;
 }
-
-/* #rodape{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #4C4C59;
-} */
