@@ -31,6 +31,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* HEADER DA PÁGINA */
@@ -43,7 +44,7 @@
 }
 
 .header-Sec {
-    background-image: url(../Imagens/Satelite-inicio.jpeg);
+    background-image: url(../Imagens/Satelite-inicio-2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,26 +66,24 @@ header {
 
 h1 {
     font-family: 'Nunito', sans-serif;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 800;
-    color: #fffffd;
+    color: var(--color-almost-White);
     text-align: center;
-    letter-spacing: 3px;
-    line-height: 1.4;
+    letter-spacing: 4px;
+    line-height: 1;
     text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9), 0px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
 .subtitulo {
     font-family: 'Nunito', sans-serif;
-    font-size: 2.8rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 500;
     color: var(--color-almost-White);
-    letter-spacing: 8px;
     text-shadow:
     0px 0px 40px rgba(255, 255, 255, 0.6),
     0px 0px 10px rgba(255, 255, 255, 0.4),
     0px 2px 10px rgba(0, 0, 0, 0.9);
-    
 }
 
 .sec-menu {
@@ -122,9 +121,9 @@ h1 {
     margin-left: var(--spacing-sm);
 }
 
-/* SEÇÃO 1 E DEFINIÇÃO DA SEÇÃO 3 E 5 (TALVEZ MUDE DEPOIS) */
+/* SEÇÃO 1 E DEFINIÇÃO DA SEÇÃO 5 (TALVEZ MUDE DEPOIS) */
 
-#sec-1, #sec-3, #sec-5{
+#sec-1,  #sec-5{
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -132,6 +131,7 @@ align-items: center;
 background-color: var(--color-dark-gray);
 color: var(--color-almost-White);
 padding: 160px;
+min-height: 90vh;
 }
 
 .div-txt{
@@ -180,6 +180,46 @@ text-align: left;
 font-size: 16px;
 }
 
+/* SEÇÃO 3 */
+
+#sec-3{
+    background-image: url(../Imagens/satelite-fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 90vh;
+}
+
+#h2-sec3{
+    font-family: 'nunito', sans-serif;
+    color: var(--color-almost-White);
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8), 0px 2px 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.div-txt-s3{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; 
+    margin-top: 8.8rem; 
+    margin-left: 6.1rem;
+    max-width: 400px;
+}
+
+.sec3-txt{
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-almost-White);
+    font-size: 1.6rem;
+    text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+    text-align: left;
+}
+.teste3{
+    color: var(--color-dark-gray);
+    font-weight: 600;
+}
+
+
 /* SEÇÃO 2, 4, 6 (TALVEZ MUDE DEPOIS) E RODAPÉ */
 
 h2{
@@ -208,3 +248,16 @@ p{
     font-family: 'Raleway', sans-serif;
     padding: 20px;
 }
+
+/* animation: zoomEffect 20s infinite alternate;
+position: relative;
+
+@keyframes zoomEffect {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 110%; 
+    }
+} 
+    aumenta 10% suavemente da imagem. testar depois de finalizar tudo*/
